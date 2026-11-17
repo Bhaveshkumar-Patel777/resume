@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4f0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Resume of Bhaveshkumar Patel, IT Security, DevOps, and Infrastructure Engineer with 15+ years of enterprise experience.">
+  <title>Bhaveshkumar Patel | IT Security, DevOps &amp; Infrastructure Engineer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d2928;
+      --muted: #62706d;
+      --paper: #fffefa;
+      --canvas: #f5f4f0;
+      --line: #e4e6df;
+      --accent: #28645a;
+      --accent-soft: #eaf2ee;
+      --max-width: 1080px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid #d18a4b; outline-offset: 4px; }
+
+    .wrap {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wordmark {
+      color: var(--ink);
+      font-size: .92rem;
+      font-weight: 750;
+      letter-spacing: .04em;
+      text-decoration: none;
+    }
+
+    nav { display: flex; gap: 26px; }
+    nav a {
+      color: var(--muted);
+      font-size: .88rem;
+      text-decoration: none;
+    }
+    nav a:hover { color: var(--accent); }
+
+    main { padding: 48px 0 80px; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 250px;
+      gap: 48px;
+      align-items: center;
+      padding: 48px 0 64px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: .76rem;
+      font-weight: 750;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 720px;
+      margin-bottom: 18px;
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      letter-spacing: -.065em;
+      line-height: 1.03;
+    }
+
+    .role {
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+      font-weight: 650;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: 1.07rem;
+    }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: var(--accent); }
+    .button:hover { filter: brightness(.94); }
+
+    .profile-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      box-shadow: 0 12px 35px rgb(29 41 40 / 5%);
+    }
+    .profile-mark {
+      display: grid;
+      width: 76px;
+      height: 76px;
+      place-items: center;
+      margin-bottom: 18px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 1.4rem;
+      font-weight: 750;
+    }
+    .profile-card h2 { margin-bottom: 2px; font-size: 1.12rem; }
+    .profile-card p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+    .profile-card .availability {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 9px;
+      border-radius: 99px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 54px;
+      padding-top: 24px;
+    }
+    section { scroll-margin-top: 24px; }
+    .section { margin-bottom: 52px; }
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      letter-spacing: -.025em;
+    }
+    .section-heading::after {
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+      content: "";
+    }
+
+    .entry {
+      position: relative;
+      margin: 0 0 28px 8px;
+      padding: 0 0 0 24px;
+      border-left: 1px solid var(--line);
+    }
+    .entry::before {
+      position: absolute;
+      top: 7px;
+      left: -5px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+    }
+    .entry:last-child { margin-bottom: 0; }
+    .entry-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4px 18px;
+      margin-bottom: 3px;
+    }
+    .entry h3 { margin-bottom: 2px; font-size: 1rem; }
+    .entry .date { color: var(--muted); font-size: .84rem; }
+    .entry .place { margin-bottom: 10px; color: var(--accent); font-size: .9rem; font-weight: 600; }
+    .entry p, .entry ul { margin-bottom: 0; color: var(--muted); font-size: .92rem; }
+    .entry ul { padding-left: 18px; }
+    .entry li + li { margin-top: 5px; }
+
+    aside .section { margin-bottom: 34px; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill {
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--paper);
+      color: #43504d;
+      font-size: .8rem;
+    }
+    .contact-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+    .contact-list li { color: var(--muted); font-size: .9rem; overflow-wrap: anywhere; }
+    .contact-list strong { display: block; color: var(--ink); font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; }
+    .contact-list a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .note { color: var(--muted); font-size: .82rem; }
+
+    footer {
+      padding: 22px 0 30px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    footer .wrap { display: flex; justify-content: space-between; gap: 12px; }
+
+    @media (max-width: 760px) {
+      .hero, .layout { grid-template-columns: 1fr; gap: 28px; }
+      .hero { padding: 36px 0 44px; }
+      .profile-card { max-width: 420px; }
+      .layout { padding-top: 8px; }
+      aside { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+      aside .section { margin-bottom: 12px; }
+    }
+    @media (max-width: 520px) {
+      .wrap { width: min(100% - 28px, var(--max-width)); }
+      .topbar { min-height: 64px; }
+      nav { gap: 14px; }
+      nav a { font-size: .78rem; }
+      main { padding-top: 24px; }
+      h1 { font-size: 2.8rem; }
+      aside { grid-template-columns: 1fr; }
+      footer .wrap { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media print {
+      @page { margin: 14mm; }
+      body { background: white; font-size: 10pt; }
+      .wrap { width: auto; }
+      .topbar, .actions, footer, .note { display: none; }
+      main { padding: 0; }
+      .hero { grid-template-columns: 1fr; padding: 0 0 18px; }
+      .profile-card { display: none; }
+      h1 { font-size: 32pt; }
+      .layout { grid-template-columns: minmax(0, 1fr) 210px; gap: 24px; }
+      .section { margin-bottom: 24px; }
+      .entry { break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+      .skill { background: white; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="wordmark" href="#top">BHAVESHKUMAR PATEL</a>
+    <nav aria-label="Main navigation">
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Professional resume</p>
+        <h1 id="page-title">Bhaveshkumar Patel</h1>
+        <p class="role">IT Security, DevOps &amp; Infrastructure Engineer</p>
+        <p class="intro">IT security, DevOps, and infrastructure engineer with 15+ years of experience in enterprise environments, particularly banking and financial services. Experienced in CI/CD, automation, network security, SIEM, vulnerability management, and production support, with a record of implementing secure, scalable solutions and supporting compliance. PMP-certified, with completed CCNP training and CEH strategy knowledge.</p>
+        <div class="actions">
+          <a class="button" href="mailto:patel.bhavesh777@yahoo.com">Get in touch</a>
+          <a class="button secondary" href="#experience">View experience</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-mark" aria-hidden="true">BP</div>
+        <h2>Bhaveshkumar Patel</h2>
+        <p>Woodbridge Township, New Jersey</p>
+        <span class="availability">Available immediately</span>
+      </div>
+    </section>
+
+    <div class="layout">
+      <div>
+        <section class="section" id="experience">
+          <div class="section-heading"><h2>Experience</h2></div>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>DevOps Engineer / Network Engineer IV</h3>
+              <span class="date">Feb 2025 — Dec 2025</span>
+            </div>
+            <p class="place">Bank of America Merrill Lynch · New Jersey</p>
+            <ul>
+              <li>Designed and maintained CI/CD pipelines and automated configuration and deployment processes in collaboration with development teams.</li>
+              <li>Managed Ansible Automation Platform across 200+ servers, reducing deployment time by 40%; worked with custom modules, execution environments, Automation Hub, and CI/CD integrations.</li>
+              <li>Supported product integration, platform upgrades, certificate management, Carbonite replication, and Bitbucket/XLR deployment mappings while following security standards and OS hardening requirements.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Infrastructure Engineer</h3>
+              <span class="date">Oct 2022 — Sep 2024</span>
+            </div>
+            <p class="place">Bank of America Merrill Lynch · New Jersey</p>
+            <ul>
+              <li>Built and maintained highly available infrastructure for Quality Assurance teams and managed an enterprise infrastructure lab.</li>
+              <li>Served as a subject matter expert for performance engineering, patch management, root cause analysis, and infrastructure optimization.</li>
+              <li>Mentored junior team members and delivered monthly performance metrics and operational analysis to management.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Production Support Engineer</h3>
+              <span class="date">Jan 2022 — Aug 2022</span>
+            </div>
+            <p class="place">Verizon · New Jersey</p>
+            <ul>
+              <li>Supported the Verint Workforce Engagement suite, including workforce management, speech and text analytics, AI, and interactions.</li>
+              <li>Handled deployments, troubleshooting, performance tuning, and real-time monitoring for critical modules; submitted enhancements to reduce risk and improve performance.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Federal Officer</h3>
+              <span class="date">Feb 2021 — Jan 2022</span>
+            </div>
+            <p class="place">U.S. Department of Homeland Security · New Jersey</p>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Network / System Engineer V</h3>
+              <span class="date">May 2020 — Feb 2021</span>
+            </div>
+            <p class="place">Bank of America Merrill Lynch · New Jersey</p>
+            <ul>
+              <li>Delivered technology remediation, Apache Tomcat troubleshooting, and application policy management.</li>
+              <li>Conducted governance analysis, risk mitigation, and process improvement; prepared weekly consolidated reports and led cross-functional projects.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Systems Engineer, Operations Support</h3>
+              <span class="date">Sep 2018 — Sep 2019</span>
+            </div>
+            <p class="place">Rockefeller Capital Management · USA</p>
+            <ul>
+              <li>Managed Windows Server environments, Active Directory, IIS, and load balancing.</li>
+              <li>Implemented security systems, redundant backups, and automation scripts; provided system support, integration, QA, and production deployment assistance.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Server Administrator III, Production Support Lead (L2)</h3>
+              <span class="date">Oct 2017 — Sep 2018</span>
+            </div>
+            <p class="place">Bank of America Merrill Lynch · New Jersey</p>
+            <ul>
+              <li>Led production support, incident and problem management, releases, deployments, and Splunk monitoring.</li>
+              <li>Performed Tomcat, WebSphere, and JBoss log analysis, root cause analysis, and on-call support to improve application stability, security, and monitoring.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Server Security Engineer</h3>
+              <span class="date">Jun 2017 — Aug 2017</span>
+            </div>
+            <p class="place">Sumitomo Mitsui Trust Bank · New York</p>
+            <ul>
+              <li>Conducted Nessus vulnerability assessments, penetration-test remediation, and security audits.</li>
+              <li>Managed SSL/TLS certificates, incident response, and security operations automation; advised on policies, risk, and security technologies.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Systems Engineer, External IT Consultant</h3>
+              <span class="date">Oct 2015 — Apr 2017</span>
+            </div>
+            <p class="place">Bank of America Merrill Lynch · New Jersey</p>
+            <ul>
+              <li>Led Electric Flow application deployment, configuration, and manual testing.</li>
+              <li>Supported Check21 processes and CA-Automation package deployments; coordinated complex systems engineering and cross-functional project delivery.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Server Administrator / System Engineer / IT Security Engineer / IT Manager</h3>
+              <span class="date">May 2012 — Mar 2015</span>
+            </div>
+            <p class="place">US Pharma Lab Inc. · New Jersey</p>
+            <ul>
+              <li>Managed Windows Server 2003/2008/2012, Active Directory, Group Policy, IIS, and infrastructure security.</li>
+              <li>Implemented OS hardening, antivirus, data-loss prevention, and intrusion prevention; reduced website misuse by 25% through security filters.</li>
+              <li>Delivered remote support across global locations.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Earlier Experience</h3>
+              <span class="date">2007 — 2012</span>
+            </div>
+            <p class="place">Emcure Pharmaceuticals · PCS Technologies · Dev Information Technology (WIPRO)</p>
+            <p>Progressive System Support Engineer, Team Lead, and Lead Engineer roles, building foundations in Windows and Linux administration, networking, security, and helpdesk operations.</p>
+          </article>
+        </section>
+
+        <section class="section" id="education">
+          <div class="section-heading"><h2>Education</h2></div>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Bachelor of Computer Application (BCA), Database Management</h3>
+              <span class="date">Dec 2004</span>
+            </div>
+            <p class="place">Gujarat University · India</p>
+          </article>
+        </section>
+
+        <section class="section" id="certifications">
+          <div class="section-heading"><h2>Certification &amp; Training</h2></div>
+          <article class="entry">
+            <h3>Project Management Professional (PMP)</h3>
+            <p class="place">Certification #297687</p>
+            <p>CCNP training completed; CEH strategy knowledge.</p>
+          </article>
+        </section>
+      </div>
+
+      <aside>
+        <section class="section" aria-labelledby="skills-heading">
+          <div class="section-heading"><h2 id="skills-heading">Key Competencies</h2></div>
+          <div class="skill-list">
+            <span class="skill">CI/CD</span>
+            <span class="skill">Ansible</span>
+            <span class="skill">Bitbucket</span>
+            <span class="skill">Electric Flow</span>
+            <span class="skill">Ansible Tower</span>
+            <span class="skill">SIEM</span>
+            <span class="skill">Vulnerability assessment</span>
+            <span class="skill">OS hardening</span>
+            <span class="skill">Nessus</span>
+            <span class="skill">Wireshark</span>
+            <span class="skill">Splunk</span>
+            <span class="skill">F5 load balancer</span>
+            <span class="skill">Windows Server</span>
+            <span class="skill">IIS</span>
+            <span class="skill">Active Directory</span>
+            <span class="skill">Tomcat</span>
+            <span class="skill">Disaster recovery</span>
+            <span class="skill">Production support</span>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="section-heading"><h2>Contact</h2></div>
+          <ul class="contact-list">
+            <li><strong>Email</strong><a href="mailto:patel.bhavesh777@yahoo.com">patel.bhavesh777@yahoo.com</a></li>
+            <li><strong>Phone</strong><a href="tel:+17326389699">732-638-9699</a></li>
+            <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/bhaveshkumar-patel">linkedin.com/in/bhaveshkumar-patel</a></li>
+            <li><strong>Location</strong>Woodbridge Township, New Jersey</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Bhaveshkumar Patel · Woodbridge Township, New Jersey</span>
+      <span>Professional resume</span>
+    </div>
+  </footer>
+</body>
+</html>
